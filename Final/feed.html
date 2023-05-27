@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="feed.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <form
+      action="https://formsubmit.co/melvin.rinaldo@elev.ga.ntig.se"
+      method="POST"
+    >
+      <fieldset class="message-box">
+        <input type="hidden" name="_subject" value="New submission!" />
+        <legend>Feedback</legend>
+        <label for="email" class="paperplease">Email:</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          class="inputbox"
+          placeholder="Email Adress"
+          required
+        />
+        <input
+          type="hidden"
+          name="_next"
+          value="http://127.0.0.1:5500/thk.html"
+          target="_blank"
+          id="iname"
+        />
+        <label for="namn" class="paperplease">Name:</label>
+        <input type="text" name="text" id="text" class="inputbox" />
+        <label for="message" class="paperplease">Feedback:</label>
+        <textarea
+          name="message"
+          id="message"
+          cols="auto"
+          rows="4"
+          class="inputbox"
+          id="ifeed"
+        ></textarea>
+        <input type="submit" class="btn-send" id="send" name="send" />
+        <a href="/index.html" class="mhm">Go back</a>
+      </fieldset>
+    </form>
+  </body>
+</html>

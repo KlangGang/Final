@@ -1,0 +1,521 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    /* outline: 1px dotted red; */
+}
+
+html {
+    background-color: honeydew;
+}
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+    }
+  
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+
+@media (max-width: 600px){
+    .skip-link {
+        display: none;
+    }
+    
+    .header {
+        background-color: white;
+        min-height: fit-content;
+        height: 10vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 2%;
+    }
+    
+    .Atari {
+        max-height: 50%;
+        max-width: 50%;
+    }
+    
+    .best {
+        font-size:4vh;
+    }
+    .ad {
+        border: 1px solid black;
+        width: 80%;
+        margin: 10%;
+        display: none;
+    }
+    
+    .product {
+        width: 100%;
+        height: 20vh;
+    }
+    .outline {
+        outline: 1px solid black;
+        padding: 1%;
+    }
+    
+    .prev, .next {
+        cursor: pointer;
+        color: hotpink;
+        font-weight: bold;
+        font-size: 18px;
+        user-select: none;
+        margin: 10%;
+        background-color: cyan;
+      }
+      .dots {
+        text-align: center;
+    }
+    
+    .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+      }
+
+    .hero {
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+        background-color: black;
+    }
+    
+    .slideshow-container {
+        display: grid;
+        grid-template-columns: 10% 80% 10%;
+        align-items: center;
+    }
+    
+    .naming {
+        margin: 10%;
+        text-align: center;
+    }
+    
+    .footer {
+        background: rgb(200, 180, 180);
+        margin-top: auto;
+        margin-top: 10%;
+    }
+    .footer-navigation {
+     margin-left: 3rem;
+    }
+    
+    .dropdown{
+        position: sticky;
+        top: 0;
+        border: solid black;
+        background-color: greenyellow;
+        padding: 2%;
+        width: 100%;
+        max-height: fit-content;
+        min-height: 10vh;
+        max-height: fit-content;
+    }
+    
+    .menu {
+        top: 0;
+        z-index: 99;
+        height: fit-content;
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: greenyellow;
+        border: solid black;
+        position: fixed;
+        top:0px;
+        margin-top: 10vh;
+    }
+    
+    .menu.close {
+        display: none;
+    /* This is what the js is for */
+    }
+    
+    
+    .parkour {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: greenyellow;
+        border: solid 1px black;
+        padding: 5%;
+    }
+    
+    .parkour a {
+        text-decoration: none;
+    }
+    
+    .gridshow {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        width: 60%;
+        margin-left: 20%;
+    }
+    .primary-navigation__links, .hero2 {
+        display: none;
+    }
+
+}
+
+
+
+
+
+@media (min-width: 600px) and (max-width:1080px) {
+    .skip-link {
+        position: fixed;
+        z-index: 100;
+        top: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+        color: var(--fg-clr-gray);
+        background-color: var(--bg-clr-blue);
+        translate: 0 -100%;
+        transition: translate 150ms ease-in-out;
+        padding: .75rem;
+        text-decoration: none;
+    }
+    
+    .skip-link:focus,
+    .skip-link:hover {
+        color: var(--fg-clr-normal);
+        text-decoration: underline;
+        translate: 0;
+    }
+    
+    .header {
+        background-color: white;
+        min-height: fit-content;
+        height: 10vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 2%;
+    }
+    
+    .Atari {
+        max-height: 50%;
+        max-width: 50%;
+    }
+    
+    .best {
+        font-size:4vh;
+    }
+    .ad {
+        border: 1px solid black;
+        width: 80%;
+        margin: 10%;
+        display: none;
+    }
+    
+    .product {
+        width: 100%;
+        max-height: 35vh;
+    }
+    .outline {
+        outline: 1px solid black;
+        padding: 1%;
+    }
+    
+    .prev, .next {
+        cursor: pointer;
+        color: hotpink;
+        font-weight: bold;
+        font-size: 10vh;
+        user-select: none;
+        margin: 10%;
+      }
+    
+    .dots {
+        text-align: center;
+    }
+    .dot {
+        cursor: pointer;
+        height: 3rem;
+        width: 3rem;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+      }
+    
+    .hero {
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+        background-color: black;
+    }
+    
+    .slideshow-container {
+        display: grid;
+        grid-template-columns: 10% 80% 10%;
+        align-items: center;
+    }
+    
+    .naming {
+        margin: 10%;
+        text-align: center;
+    }
+    
+    .footer {
+        background: rgb(200, 180, 180);
+        margin-top: auto;
+        margin-top: 2rem; 
+    }
+    .footer-navigation {
+     margin-left: 3rem;
+    }
+    
+    .dropdown{
+        display: none;
+    }
+    
+    .menu {
+        display: none;
+    }
+    
+    .menu.close {
+        display: none;
+    /* This is what the js is for */
+    }
+    
+    
+    .parkour {
+        display: none;
+    }
+    
+    .parkour a {
+        text-decoration: none;
+    }
+    
+    .gridshow {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        width: 60%;
+        margin-left: 20%;
+    }
+    .vid {
+        width:560;
+        height:315;
+    }
+    .primary-navigation__links {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        list-style: none;
+        margin-inline: auto; 
+        min-height: 2rem;
+        background-color: aquamarine;
+        position: sticky;
+        top: 0;
+
+    }
+    .primary-navigation__links a {
+        text-decoration: none;
+        font-size: 2vh;
+    }
+    .atari2 {
+        display: none;
+    }
+
+    .atari2.scroll {
+        display: block;
+        background-color: aliceblue;
+
+    }
+    .hero2 {
+        display: none;
+    }
+}
+
+
+
+
+
+@media (min-width: 1080px) {
+    .skip-link {
+        position: fixed;
+        z-index: 100;
+        top: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+        color: var(--fg-clr-gray);
+        background-color: var(--bg-clr-blue);
+        translate: 0 -100%;
+        transition: translate 150ms ease-in-out;
+        padding: .75rem;
+        text-decoration: none;
+    }
+    
+    .skip-link:focus,
+    .skip-link:hover {
+        color: var(--fg-clr-normal);
+        text-decoration: underline;
+        translate: 0;
+    }
+    
+    .header {
+        background-color: white;
+        min-height: fit-content;
+        height: 10vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 2%;
+    }
+    
+    .Atari {
+        max-height: 50%;
+        max-width: 50%;
+    }
+    
+    .best {
+        font-size:4vh;
+    }
+    .ad {
+        border: 1px solid black;
+        width: 80%;
+        margin-bottom: 2%;
+        display: none;
+    }
+    
+    .product {
+        width: 100%;
+    }
+    .outline {
+        outline: 1px solid black;
+        padding: 1%;
+    }
+    
+    .prev, .next {
+        cursor: pointer;
+        color: hotpink;
+        font-weight: bold;
+        font-size: 30vh;
+        user-select: none;
+        margin: 10%;
+      }
+    .dots {
+        text-align: center;
+    }
+    
+    .dot {
+        cursor: pointer;
+        height: 3rem;
+        width: 3rem;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+      }
+    
+    .hero {
+        display: none;
+    }
+    
+    .slideshow-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    
+    .naming {
+        margin: 3%;
+        text-align: center;
+        font-size: 5vh;
+    }
+    
+    .footer {
+        background: rgb(200, 180, 180);
+        margin-top: auto;
+        margin-top: 2rem; 
+    }
+    .footer-navigation {
+     margin-left: 3rem;
+    }
+    
+    .dropdown{
+        display: none;
+    }
+    
+    .menu {
+        display: none;
+    }
+    
+    .menu.close {
+        display: none;
+    /* This is what the js is for */
+    }
+    
+    
+    .parkour {
+        display: none;
+    }
+    
+    .parkour a {
+        text-decoration: none;
+    }
+    
+    .gridshow {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        width: 60%;
+        margin-left: 20%;
+    }
+    .vid {
+        width:560;
+        height:315;
+    }
+    .primary-navigation__links {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        list-style: none;
+        margin-inline: auto; 
+        min-height: 5vh;
+        background-color: aquamarine;
+        position: sticky;
+        top: 0;
+
+    }
+    .primary-navigation__links a {
+        text-decoration: none;
+        font-size: 2vh;
+    }
+    .atari2 {
+        display: none;
+    }
+
+    .atari2.scroll {
+        display: block;
+        background-color: aliceblue;
+
+    }
+    .hero2 {
+        width: 100%;
+        max-height: 85vh;
+    }
+
+}

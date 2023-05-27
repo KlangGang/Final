@@ -1,0 +1,47 @@
+input, button, textarea {
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+textarea {
+    resize: none;
+    overflow: hidden;
+    height:fit-content
+}
+
+.message-box {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-clr-blue);
+    margin-bottom: 1rem;
+}
+
+legend {
+    text-align: center;
+    font-weight: bold;
+}
+.btn-send {
+    margin: 2%;
+}
+
+.paperplease {
+    margin-left: 2%;
+    margin-top: 1%;
+}
+
+.inputbox {
+    margin-left: 2%;
+    margin-right: 2%;
+    background-color: rgb(230, 250, 232);
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.mhm {
+    min-height: 2rem;
+    min-width: 7rem;
+    background-color: forestgreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
